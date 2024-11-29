@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Promoção Corteiz</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+ 
+  <img src="https://rwear.co/wp-content/uploads/2023/07/ccrrtt.png" alt="Imagem PNG" class="rotating-image">
+
+  <!-- Banner principal -->
+  <header class="banner">
+    <div class="overlay"></div>
+    <div class="banner-content">
+      <h1>Ganhe Seu Cupom Corteiz!</h1>
+      <p>Descontos exclusivos em produtos da Corteiz. Inscreva-se agora e aproveite!</p>
+    </div>
+  </header>
+
+  <!-- Formulário -->
+  <section class="form-section">
+    <h2>Solicite seu cupom e aproveite a promoção</h2>
+    <form class="promo-form" id="promoForm">
+      <label for="name">Nome:</label>
+      <input type="text" id="name" name="name" placeholder="Seu nome" required>
+
+      <label for="email">E-mail:</label>
+      <input type="email" id="email" name="email" placeholder="Seu e-mail" required>
+
+      <label for="promo-code">Cupom:</label>
+      <input type="text" id="promo-code" name="promo-code" placeholder="Digite 'Corteiz30'" required>
+
+      <label for="city">Cidade:</label>
+      <input type="text" id="city" name="city" placeholder="Sua cidade" required>
+
+      <label for="contact">Contato:</label>
+      <input type="tel" id="contact" name="contact" placeholder="Seu telefone" required>
+
+      <label for="customer-status">Você é cliente da Corteiz?</label>
+      <select id="customer-status" name="customer-status" required>
+        <option value="">Selecione...</option>
+        <option value="sim">Sim</option>
+        <option value="nao">Não</option>
+      </select>
+
+      <button type="submit">Solicitar Cupom</button>
+    </form>
+  </section>
+
+  <script src="scripts.js"></script>
+</body>
